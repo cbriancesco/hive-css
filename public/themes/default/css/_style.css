@@ -297,6 +297,9 @@ img {
   line-height: 22px;
   display: block;
 }
+.main-navigation__link:hover {
+  color: #ff3f28;
+}
 .dont-miss {
   padding-top: 5px;
   overflow: hidden;
@@ -335,5 +338,8 @@ img {
   color: #fff;
   font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
+}
+.dont-miss__link:hover {
+  color: #ff3f28;
 }
 /* MODIFIERS */
