@@ -6,14 +6,14 @@ module.exports = function(grunt) {
 					compress: false
 				},
 				files: {
-					'./public/theme/css/_style.css': ['./public/theme/css/_style.styl']
+					'./public/themes/default/css/_style.css': ['./public/themes/default/css/_style.styl']
 				}
 			}
 		},
 		watch: {
 			// Watch stylus files in "styl" directory
 			stylus: {
-				files: ['./public/theme/css/*/*.styl'],
+				files: ['./public/themes/default/css/**/*.styl'],
 				tasks: ['stylus']
 			}
 		}
