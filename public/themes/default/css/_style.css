@@ -321,6 +321,10 @@ img {
 .dont-miss__item:first-child {
   padding: 0;
 }
+.dont-miss__item:last-child:after,
+.dont-miss__item:first-child:after {
+  display: none;
+}
 .dont-miss__title {
   color: #ffba52;
   font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
