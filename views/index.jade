@@ -1,6 +1,7 @@
 doctype html
 html
 	head
+		script(type='text/javascript') (function(d) {var config={kitId:'xjd1kby',scriptTimeout:10000}, h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)})(document);
 		meta(charset='utf-8')
 		meta(http-equiv='content-type', content='text/html;charset=utf-8')
 		meta(name='viewport', content='width=device-width,minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0')
@@ -8,16 +9,36 @@ html
 
 	body
 		header.main-header
-			h1.main-page-title fuse
-			nav.main-navigation-container
-				ul.main-navigation
-					li.main-navigation-item
-						a.main-navigation-link(href='#') Shows
-					li.main-navigation-item
-						a.main-navigation-link(href='#') Festivals
-					li.main-navigation-item
-						a.main-navigation-link(href='#') Fun Stuff
-					li.main-navigation-item
-						a.main-navigation-link(href='#') Music
-				ul.main-navigation-dont-miss
+			.basic-container
+				h1.main-page-title.icon-fuse-logo
+					span.path1
+					span.path2
+					span.path3
+					span.path4
+					span.path5
+					span.path6
+					span.path7
+					span.path8
+
+				nav.main-navigation-container
+					ul.main-navigation
+						li.main-navigation__item
+							a.main-navigation__link(href='#') Shows
+						li.main-navigation__item
+							a.main-navigation__link(href='#') Festivals
+						li.main-navigation__item
+							a.main-navigation__link(href='#') Fun Stuff
+						li.main-navigation__item
+							a.main-navigation__link(href='#') Music
+					ul.dont-miss
+						li.dont-miss__item
+							h2.dont-miss__title Don't miss:
+						li.dont-miss__item
+							a.dont-miss__link(href='#') Legends Football
+						li.dont-miss__item
+							a.dont-miss__link(href='#') Leage
+						li.dont-miss__item
+							a.dont-miss__link(href='#') SKEE TV
+						li.dont-miss__item
+							a.dont-miss__link(href='#') Got Ur #
 

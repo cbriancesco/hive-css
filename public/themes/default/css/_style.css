@@ -21,9 +21,12 @@ textarea,
 p,
 blockquote,
 th,
-td {
+td,
+a {
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 table {
   border-collapse: collapse;
@@ -119,6 +122,214 @@ address {
 img {
   vertical-align: top;
 }
+@font-face {
+  font-family: 'fuse';
+  src: url("../fonts/fuse.eot?11ioxq");
+  src: url("../fonts/fuse.eot?#iefix11ioxq") format('embedded-opentype'), url("../fonts/fuse.ttf?11ioxq") format('truetype'), url("../fonts/fuse.woff?11ioxq") format('woff'), url("../fonts/fuse.svg?11ioxq#fuse") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'fuse';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+/* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-fuse-logo .path1:before {
+  content: "\e610";
+  color: #ef4038;
+}
+.icon-fuse-logo .path2:before {
+  content: "\e614";
+  margin-left: -2.2412109375em;
+  color: #ef4038;
+}
+.icon-fuse-logo .path3:before {
+  content: "\e615";
+  margin-left: -2.2412109375em;
+  color: #ef4038;
+}
+.icon-fuse-logo .path4:before {
+  content: "\e616";
+  margin-left: -2.2412109375em;
+  color: #ef4038;
+}
+.icon-fuse-logo .path5:before {
+  content: "\e617";
+  margin-left: -2.2412109375em;
+  color: #f47b65;
+}
+.icon-fuse-logo .path6:before {
+  content: "\e618";
+  margin-left: -2.2412109375em;
+  color: #f47b65;
+}
+.icon-fuse-logo .path7:before {
+  content: "\e619";
+  margin-left: -2.2412109375em;
+  color: #f47b65;
+}
+.icon-fuse-logo .path8:before {
+  content: "\e61c";
+  margin-left: -2.2412109375em;
+  color: #f47b65;
+}
+.icon-fm:before {
+  content: "\e60d";
+}
+.icon-check:before {
+  content: "\e61a";
+}
+.icon-dropdown:before {
+  content: "\e61b";
+}
+.icon-overlay:before {
+  content: "\e60f";
+}
+.icon-arrow_down:before {
+  content: "\e600";
+}
+.icon-arrow_left:before {
+  content: "\e601";
+}
+.icon-arrow_right:before {
+  content: "\e602";
+}
+.icon-arrow_trending_left:before {
+  content: "\e603";
+}
+.icon-arrow_up:before {
+  content: "\e604";
+}
+.icon-close_x:before {
+  content: "\e605";
+}
+.icon-facebook:before {
+  content: "\e606";
+}
+.icon-fuse_festivals:before {
+  content: "\e607";
+}
+.icon-fuse_logo:before {
+  content: "\e608";
+}
+.icon-google:before {
+  content: "\e609";
+}
+.icon-instagram:before {
+  content: "\e60a";
+}
+.icon-menu:before {
+  content: "\e60b";
+}
+.icon-play_icon:before {
+  content: "\e60c";
+}
+.icon-restart_icon:before {
+  content: "\e611";
+}
+.icon-search:before {
+  content: "\e60e";
+}
+.icon-twitter:before {
+  content: "\e612";
+}
+.icon-youtube:before {
+  content: "\e613";
+}
 /* STRUCTURE */
+.basic-container {
+  margin: 0 auto;
+  max-width: 1152px;
+  overflow: hidden;
+}
 /* MODULES */
+.main-header {
+  background-color: #0b4a4f;
+}
+.main-page-title {
+  font-size: 45px;
+  line-height: 45px;
+  padding: 9px 0 11px 0;
+  float: left;
+}
+.main-navigation-container {
+  padding: 13px 0 0 45px;
+  float: left;
+}
+.main-navigation {
+  overflow: hidden;
+}
+.main-navigation__item {
+  float: left;
+  position: relative;
+  padding: 0 20px;
+}
+.main-navigation__item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin: -7px 0 0 0;
+  height: 14px;
+  border-right: 1px solid #ffba52;
+}
+.main-navigation__item:first-child {
+  padding-left: 0;
+}
+.main-navigation__item:last-child:after {
+  display: none;
+}
+.main-navigation__link {
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 30px;
+  line-height: 22px;
+  display: block;
+}
+.dont-miss {
+  padding-top: 5px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 15px;
+}
+.dont-miss__item {
+  float: left;
+  padding: 0 11px;
+  position: relative;
+}
+.dont-miss__item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 11px;
+  border-right: 1px solid #ffba52;
+  margin: -5.5px 0 0 0;
+}
+.dont-miss__item:first-child {
+  padding: 0;
+}
+.dont-miss__title {
+  color: #ffba52;
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.dont-miss__link {
+  color: #fff;
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
 /* MODIFIERS */
