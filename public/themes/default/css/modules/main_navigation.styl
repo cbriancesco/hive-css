@@ -22,20 +22,11 @@
 	padding 0 20px
 
 .main-navigation__item:after
-	content ""
-	display block
-	position absolute
-	right 0
-	top 50%
-	margin -7px 0 0 0
 	height 14px
-	border-right 1px solid $orange-light
+	margin -7px 0 0 0
 
 .main-navigation__item:first-child
 	padding-left 0
-	
-.main-navigation__item:last-child:after
-	display none
 
 .main-navigation__link
 	font-family $font-normal
@@ -45,9 +36,6 @@
 	font-size 30px
 	line-height 22px
 	display block
-	
-.main-navigation__link:hover
-	color $red
 
 /* DONT MISS NAVIGATION */
 .dont-miss
@@ -62,21 +50,11 @@
 	position relative
 
 .dont-miss__item:after
-	content ""
-	display block
-	position absolute
-	top 50%
-	right 0
 	height 11px
-	border-right 1px solid $orange-light
 	margin -5.5px 0 0 0
 
 .dont-miss__item:first-child
 	padding 0
-	
-.dont-miss__item:last-child:after,
-.dont-miss__item:first-child:after
-	display none
 	
 .dont-miss__title
 	color $orange-light
@@ -89,11 +67,24 @@
 	font-family $font-normal
 	font-weight $font-wt-regular
 	
-.dont-miss__link:hover
+/* REUSABLE STYLES */
+.main-navigation__item:after,
+.dont-miss__item:after
+	content ""
+	display block
+	position absolute
+	right 0
+	top 50%
+	border-right 1px solid $orange-light
+
+.dont-miss__item:last-child:after,
+.dont-miss__item:first-child:after,
+.main-navigation__item:last-child:after
+	display none
+
+.dont-miss__link:hover,
+.main-navigation__link:hover
 	color $red
-
-
-
 
 
 
