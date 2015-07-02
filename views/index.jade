@@ -44,8 +44,8 @@ html
 						li.dont-miss__item
 							a.dont-miss__link(href='#') Got Ur #
 		.basic-container
-			img.leaderboard__ad(src='themes/default/images/mock_leaderboard_ad.png')
-		.basic-container
+			img.ad__leaderboard(src='themes/default/images/mock_leaderboard_ad.png')
+		.basic-container.basic-container__box-shadow
 			.gallery__container
 				h2.gallery__rubric FATHER'S DAY
 				h2.gallery__title PHOTO GALLERY: 17 MUSICAL DADS AND THEIR KIDS
@@ -54,11 +54,16 @@ html
 				.gallery__main-column
 					mixin publishDateContributor()
 					mixin listControls()
+					.gallery__slides-container
+						.gallery__slide#1
+							img(src='themes/default/images/gallery_image.png').gallery__image
+						.gallery_image-credit @michaelbuble on Instagram
 				.gallery__right-rail
 					mixin socialShare()
-					.gallery__slide-title
-						h2 User
-					.gallery__slide-description
-						p Do you think 'The Voice' coach is talking strategy with sons Usher and Naviyd? Or just doodling?
+					h2.gallery__slide-title User
+					p.gallery__slide-description Do you think 'The Voice' coach is talking strategy with sons Usher and Naviyd? Or just doodling?
+				.ad__300x250
+					.ad__image
+					span.ad__text-bottom Advertisement
 			.main-column
 			.right-rail
