@@ -9,16 +9,17 @@ html
 
 	body
 		header.main-header
-			.basic-container
-				h1.main-page-title.icon-fuse-logo
-					span.path1
-					span.path2
-					span.path3
-					span.path4
-					span.path5
-					span.path6
-					span.path7
-					span.path8
+			div.basic-container
+				h1.main-page-title
+					a.main-page-title__link.icon-fuse-logo(href="#")
+						span.path1
+						span.path2
+						span.path3
+						span.path4
+						span.path5
+						span.path6
+						span.path7
+						span.path8
 
 				nav.main-navigation-container
 					ul.main-navigation
@@ -41,4 +42,22 @@ html
 							a.dont-miss__link(href='#') SKEE TV
 						li.dont-miss__item
 							a.dont-miss__link(href='#') Got Ur #
+
+				div.global-search.icon-search
+					input.global-search__search-bar(type="text", id="fuse-search-field", name="q", placeholder="Search")
+
+				ul.upper-social
+					li.upper-social__item
+						a.upper-social__link.icon-facebook(href="#")
+					li.upper-social__item
+						a.upper-social__link.icon-twitter(href="#")
+					li.upper-social__item
+						a.upper-social__link.icon-youtube(href="#")
+					li.upper-social__item
+						a.upper-social__link.icon-instagram(href="#")
+					li.upper-social__item
+						a.upper-social__link.icon-fm(href="#")
+
+
+
 

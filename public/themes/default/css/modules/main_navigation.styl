@@ -1,12 +1,16 @@
 /* MAIN HEADER */
 .main-header
-	background-color $green-dark
+	background-color $green
 	
 .main-page-title
+	float left
+	
+.main-page-title__link
+	display block
 	font-size 45px
 	line-height 45px
 	padding 9px 0 11px 0
-	float left
+	
 	
 .main-navigation-container
 	padding 13px 0 0 45px
@@ -27,6 +31,9 @@
 
 .main-navigation__item:first-child
 	padding-left 0
+	
+.main-navigation__item:last-child
+	padding-right 0
 
 .main-navigation__link
 	font-family $font-normal
@@ -34,12 +41,12 @@
 	text-transform uppercase
 	color #fff
 	font-size 30px
-	line-height 22px
+	line-height 23px
 	display block
 
 /* DONT MISS NAVIGATION */
 .dont-miss
-	padding-top 5px
+	padding-top 4px
 	overflow hidden
 	font-size 14px
 	line-height 15px
@@ -86,16 +93,84 @@
 .main-navigation__link:hover
 	color $red
 
+/* GLOBAL SEARCH */
+.global-search
+	float left
+	width 158px
+	position relative
+	padding-left 32px
+	margin 13px 0 0 45px
 
+.global-search__search-bar
+	display block
+	width 100%
+	height 20px
+	background-color $green-dark
+	line-height 20px
+	border none
+	color $creme
+	outline none
 
+.global-search:before
+	display block
+	position absolute
+	padding 0 10px 0 6px
+	height 20px
+	top 0
+	left 0
+	background-color $green-dark
+	line-height 20px
+	text-align center
+	color $red
 
+/* UPPER SOCIAL NAVIGATION */
+.upper-social
+	overflow hidden
+	float left
+	padding-top 13px
 
+.upper-social__item
+	float left
+	padding-left 5px
 
+.upper-social__link
+	display block
+	width 20px
+	line-height 20px
+	
+.upper-social__link:before 
+	color #fff
+	display  block
+	text-align center
 
+.icon-facebook:before
+	background-color #3a5899
+	
+.icon-twitter:before
+	background-color #2ca9e0
+	
+.icon-youtube:before
+	background-color #c8332c
 
+.icon-instagram:before
+	background-color #527ea3
 
+.upper-social__item:last-child
+	clear both
+	float right
+	padding-top 9px
+.icon-fm
+	width 45px
+	
+.icon-fm:before
+	width 45px
+	height 15px
+	font-size 50px
+	line-height 12px
+	text-indent -3px
 
-
+.icon-fm:hover:before
+	color $red
 
 
 
