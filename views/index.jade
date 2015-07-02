@@ -1,4 +1,6 @@
 doctype html
+include mixins/common
+
 html
 	head
 		script(type='text/javascript') (function(d) {var config={kitId:'xjd1kby',scriptTimeout:10000}, h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)})(document);
@@ -41,4 +43,22 @@ html
 							a.dont-miss__link(href='#') SKEE TV
 						li.dont-miss__item
 							a.dont-miss__link(href='#') Got Ur #
-
+		.basic-container
+			img.leaderboard__ad(src='themes/default/images/mock_leaderboard_ad.png')
+		.basic-container
+			.gallery__container
+				h2.gallery__rubric FATHER'S DAY
+				h2.gallery__title PHOTO GALLERY: 17 MUSICAL DADS AND THEIR KIDS
+				p.gallery__description Just in time for Father's Day, take a look through our gallery featuring Kanye West, Nick Lachey, and 16 other musicians doing that other thing they do—being cool dads!
+					
+				.gallery__main-column
+					mixin publishDateContributor()
+					mixin listControls()
+				.gallery__right-rail
+					mixin socialShare()
+					.gallery__slide-title
+						h2 User
+					.gallery__slide-description
+						p Do you think 'The Voice' coach is talking strategy with sons Usher and Naviyd? Or just doodling?
+			.main-column
+			.right-rail

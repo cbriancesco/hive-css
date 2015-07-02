@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 		stylus: {
 			compile: {
 				options: {
-					compress: false
+					compress: true
 				},
 				files: {
 					'./public/themes/default/css/_style.css': ['./public/themes/default/css/_style.styl']
