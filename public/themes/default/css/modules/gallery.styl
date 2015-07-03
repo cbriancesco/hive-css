@@ -1,0 +1,73 @@
+.gallery__container
+	max-width $size-desktop
+	display block
+	position relative
+	padding 40px 18px 20px 58px // galleries are like this look at the psds IM INNOCENT
+
+.gallery__right-rail
+	width 300px 
+	height 200px
+	margin 0 0 0 20px
+	display inline-table
+
+.gallery__main-column
+	width 748px // if this size is a thing everywhere else on the site i should place it in a variable but idk for now
+	display inline-table
+	
+.gallery__slides-container
+	margin 0 0 0 -20px
+
+.gallery__image
+	margin 15px 0 0 0
+	
+.gallery__rubric
+	display block
+	color $main-red
+	font-weight $font-wt-extrabold
+	font-size $page-rubric
+	line-height $page-rubric
+	text-transform uppercase
+	margin 0 0 5px 0
+
+.gallery__title
+	display block	
+	color $white
+	font-weight $font-wt-regular
+	font-size $page-title
+	line-height $page-title
+	text-transform uppercase
+	ellipsis(2)
+	
+.gallery__description
+	display block	
+	color $medium-grey
+	font-weight $font-wt-regular
+	font-size $page-description
+	margin 20px 0
+
+.gallery__slide-title
+	font-size 26px
+	line-height 26px
+	margin 25px 0
+	color $white
+	
+.gallery__slide-description
+	font-size 15px
+	line-height 30px
+	color $white
+	
+.gallery_image-credit
+	font-size $page-rubric
+	line-height 14px
+	margin 10px 0 0 0
+	color $medium-grey
+	display inline-block
+	float right
+
+// ----- DRY STYLES ----- //
+
+.gallery__main-column,
+.gallery__right-rail,
+.gallery__container
+	background-color $dark-green
+	

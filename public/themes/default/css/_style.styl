@@ -1,17 +1,23 @@
 /* BASE */
 
-// import reset
+/* RESET - IMPORT IN ORDER OF IMPORTANCE */
 @import 'base/reset'
+@import 'base/mixins'
 @import 'base/fonts'
 
-// import varibles
+/* VARIABLES */
 @import 'base/variables'
 
 /* STRUCTURE */
 @import 'structure/layout'
 
-/* MODULES */
+/* MODULES - IMPORT IN ALPHABETICAL ORDER */
+@import 'modules/ads'
+@import 'modules/gallery'
+@import 'modules/listicle_controls'
 @import 'modules/main_navigation'
+@import 'modules/publish_info'
 
 /* MODIFIERS */
-//@import 'modifiers/modifiers'
+@import 'modifiers/structures_modifiers'
+@import 'modifiers/modules_modifiers'

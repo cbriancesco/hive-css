@@ -1,4 +1,6 @@
 doctype html
+include mixins/common
+
 html
 	head
 		script(type='text/javascript') (function(d) {var config={kitId:'xjd1kby',scriptTimeout:10000}, h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)})(document);
@@ -42,7 +44,6 @@ html
 							a.dont-miss__link(href='#') SKEE TV
 						li.dont-miss__item
 							a.dont-miss__link(href='#') Got Ur #
-
 				div.global-search.icon-search
 					input.global-search__search-bar(type="text", id="fuse-search-field", name="q", placeholder="Search")
 
@@ -57,6 +58,34 @@ html
 						a.upper-social__link.icon-instagram(href="#")
 					li.upper-social__item
 						a.upper-social__link.icon-fm(href="#")
+
+		
+		div.basic-container
+			img.ad__leaderboard(src='themes/default/images/mock_leaderboard_ad.png')
+				
+		div.basic-container.basic-container__box-shadow
+			article.gallery__container
+				h2.gallery__rubric FATHER'S DAY
+				h2.gallery__title PHOTO GALLERY: 17 MUSICAL DADS AND THEIR KIDS
+				p.gallery__description Just in time for Father's Day, take a look through our gallery featuring Kanye West, Nick Lachey, and 16 other musicians doing that other thing they do—being cool dads!
+					
+				div.gallery__main-column
+					mixin publishDateContributor()
+					mixin listControls()
+					div.gallery__slides-container
+						.gallery__slide#1
+							img(src='themes/default/images/gallery_image.png').gallery__image
+						.gallery_image-credit @michaelbuble on Instagram
+				div.gallery__right-rail
+					mixin socialShare()
+					h2.gallery__slide-title User
+					p.gallery__slide-description Do you think 'The Voice' coach is talking strategy with sons Usher and Naviyd? Or just doodling?
+				div.ad__300x250
+					div.ad__image
+					span.ad__text-bottom Advertisement
+			section.main-column
+			div.right-rail
+
 
 		footer.main-footer
 			div.basic-container
@@ -92,6 +121,14 @@ html
 					li.lower-social__item
 						a.lower-social__link.icon-instagram(href="#")
 
-
-
-
+				ul.legal-navigation
+					li.legal-nav-item
+						a.legal-nav-link(href="#") Corporate
+					li.legal-nav-item
+						a.legal-nav-link(href="#") Press
+					li.legal-nav-item
+						a.legal-nav-link(href="#") Privacy Policy
+					li.legal-nav-item
+						a.legal-nav-link(href="#") Terms of Service
+				
+				p.legal-disclaimer © 2015 FUSE MEDIA, INC. ALL RIGHTS RESERVED.
