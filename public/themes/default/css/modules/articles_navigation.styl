@@ -1,0 +1,68 @@
+.articles-nav
+	overflow hidden
+	padding 40px 0
+	
+.articles-nav__list
+	border-top 1px solid $deep-grey 
+	border-bottom 1px solid $deep-grey
+	overflow hidden
+	position relative
+	
+.articles-nav__list:after
+	content ""
+	display block
+	position absolute
+	top 50%
+	left 50%
+	height 60px
+	margin-top -30px
+	border-right 1px solid $deep-grey
+	
+.articles-nav__item
+	float left
+	width 50%
+	
+.articles-nav__link
+	display block
+	position relative
+	line-height 22px
+	overflow visible
+	
+.articles-nav__item:first-child .articles-nav__link
+	text-align right
+	padding 14px 34px 14px 45px
+	
+.articles-nav__item:last-child .articles-nav__link
+	padding 14px 45px 14px 34px
+	
+.articles-nav__rubric
+	display block
+	font-weight $font-wt-bold 
+	color $main-red
+	text-transform uppercase
+	
+.articles-nav__title
+	font-weight $font-wt-bold
+	color $darker-grey
+	
+.articles-nav__link:hover .articles-nav__title
+	color $main-red
+	
+.articles-nav__item:last-child .articles-nav__link:before,
+.articles-nav__item:first-child .articles-nav__link:before
+	display block
+	position absolute
+	width 45px
+	line-height 45px
+	text-align center
+	height 40px
+	top 50%
+	margin-top -20px
+	color $main-red
+	font-size 36px
+
+.articles-nav__item:first-child .articles-nav__link:before	
+	left 0
+	
+.articles-nav__item:last-child .articles-nav__link:before
+	right 0
