@@ -10,60 +10,61 @@ html
 		link(href='themes/default/css/_style.css', rel='stylesheet', type='text/css')
 
 	body
-		header.main-header
+		header.main-header-container
 			div.basic-container
-				h1.main-page-title
-					a.main-page-title__link.icon-fuse-logo(href="#")
-						span.path1
-						span.path2
-						span.path3
-						span.path4
-						span.path5
-						span.path6
-						span.path7
-						span.path8
+				div.main-header
+					h1.main-page-title
+						a.main-page-title__link.icon-fuse-logo(href="#")
+							span.path1
+							span.path2
+							span.path3
+							span.path4
+							span.path5
+							span.path6
+							span.path7
+							span.path8
 
-				nav.main-navigation-container
-					ul.main-navigation
-						li.main-navigation__item
-							a.main-navigation__link(href='#') Shows
-						li.main-navigation__item
-							a.main-navigation__link(href='#') Festivals
-						li.main-navigation__item
-							a.main-navigation__link(href='#') Fun Stuff
-						li.main-navigation__item
-							a.main-navigation__link(href='#') Music
-					ul.dont-miss
-						li.dont-miss__item
-							h2.dont-miss__title Don't miss:
-						li.dont-miss__item
-							a.dont-miss__link(href='#') Legends Football
-						li.dont-miss__item
-							a.dont-miss__link(href='#') Leage
-						li.dont-miss__item
-							a.dont-miss__link(href='#') SKEE TV
-						li.dont-miss__item
-							a.dont-miss__link(href='#') Got Ur #
-				div.global-search.icon-search
-					input.global-search__search-bar(type="text", id="fuse-search-field", name="q", placeholder="Search")
+					nav.main-navigation-container
+						ul.main-navigation
+							li.main-navigation__item
+								a.main-navigation__link(href='#') Shows
+							li.main-navigation__item
+								a.main-navigation__link(href='#') Festivals
+							li.main-navigation__item
+								a.main-navigation__link(href='#') Fun Stuff
+							li.main-navigation__item
+								a.main-navigation__link(href='#') Music
+						ul.dont-miss
+							li.dont-miss__item
+								h2.dont-miss__title Don't miss:
+							li.dont-miss__item
+								a.dont-miss__link(href='#') Legends Football
+							li.dont-miss__item
+								a.dont-miss__link(href='#') Leage
+							li.dont-miss__item
+								a.dont-miss__link(href='#') SKEE TV
+							li.dont-miss__item
+								a.dont-miss__link(href='#') Got Ur #
+					div.global-search.icon-search
+						input.global-search__search-bar(type="text", placeholder="Search")
 
-				ul.upper-social
-					li.upper-social__item
-						a.upper-social__link.icon-facebook(href="#")
-					li.upper-social__item
-						a.upper-social__link.icon-twitter(href="#")
-					li.upper-social__item
-						a.upper-social__link.icon-youtube(href="#")
-					li.upper-social__item
-						a.upper-social__link.icon-instagram(href="#")
-					li.upper-social__item
-						a.upper-social__link.icon-fm(href="#")
+					ul.upper-social
+						li.upper-social__item
+							a.upper-social__link.icon-facebook(href="#")
+						li.upper-social__item
+							a.upper-social__link.icon-twitter(href="#")
+						li.upper-social__item
+							a.upper-social__link.icon-youtube(href="#")
+						li.upper-social__item
+							a.upper-social__link.icon-instagram(href="#")
+						li.upper-social__item
+							a.upper-social__link.icon-fm(href="#")
 
 		
 		div.basic-container
 			img.ad__leaderboard(src='themes/default/images/mock_leaderboard_ad.png')
 				
-		div.basic-container.basic-container__box-shadow
+		section.basic-container.basic-container__box-shadow
 			article.gallery__container
 				h2.gallery__rubric FATHER'S DAY
 				h2.gallery__title PHOTO GALLERY: 17 MUSICAL DADS AND THEIR KIDS
@@ -74,7 +75,7 @@ html
 					mixin listControls()
 					div.gallery__slides-container
 						.gallery__slide#1
-							img(src='themes/default/images/gallery_image.png').gallery__image
+							img(src='themes/default/images/gallery/gallery_image.png').gallery__image
 						.gallery_image-credit @michaelbuble on Instagram
 				div.gallery__right-rail
 					mixin socialShare()
@@ -84,7 +85,186 @@ html
 					div.ad__image
 					span.ad__text-bottom Advertisement
 			section.main-column
-			div.right-rail
+
+				nav.articles-nav
+					ul.articles-nav__list
+						li.articles-nav__item
+							a.articles-nav__link.icon-arrow_left(href="#") 
+								span.articles-nav__rubric Next
+								span.articles-nav__title Diplo, 2 Chainz, Tyga &amp; Afrojack Remix Psy's "Gangnam Style" 
+
+						li.articles-nav__item
+							a.articles-nav__link.icon-arrow_right(href="#") 
+								span.articles-nav__rubric Previous
+								span.articles-nav__title 4 Things Taylor Swift Needs You to Know About Her Love Life				
+
+				article.recommended
+					h2.recommended__header Recommended for you
+					ul.recommended__list
+						li.recommended__item
+							a.recommended__link(href="#")
+								span.recommended__image-container
+									span.recommended__rubric News
+									img.recommended__image(src='themes/default/images/recommended_sample.jpg')
+									span.recommended__play-icon.icon-play_icon
+								span.recommended__title Justin Timberlake Working on Documentary About “The 20/20 Experience”
+
+						li.recommended__item
+							a.recommended__link(href="#")
+								span.recommended__image-container
+									span.recommended__rubric News
+									img.recommended__image(src='themes/default/images/recommended_sample.jpg')
+									span.recommended__play-icon.icon-play_icon
+								span.recommended__title Justin Timberlake Working on Documentary About “The 20/20 Experience”
+
+						li.recommended__item
+							a.recommended__link(href="#")
+								span.recommended__image-container
+									span.recommended__rubric News
+									img.recommended__image(src='themes/default/images/recommended_sample.jpg')
+									span.recommended__play-icon.icon-play_icon
+								span.recommended__title Justin Timberlake Working on Documentary About “The 20/20 Experience”
+
+				article.recommended
+					h2.recommended__header Around the web
+					ul.recommended__list
+						li.recommended__item
+							a.recommended__link(href="#")
+								span.recommended__image-container
+									span.recommended__rubric News
+									img.recommended__image(src='themes/default/images/recommended_sample.jpg')
+									span.recommended__play-icon.icon-play_icon
+								span.recommended__title Justin Timberlake Working on Documentary About “The 20/20 Experience”
+
+						li.recommended__item
+							a.recommended__link(href="#")
+								span.recommended__image-container
+									span.recommended__rubric News
+									img.recommended__image(src='themes/default/images/recommended_sample.jpg')
+									span.recommended__play-icon.icon-play_icon
+								span.recommended__title Justin Timberlake Working on Documentary About “The 20/20 Experience”
+
+						li.recommended__item
+							a.recommended__link(href="#")
+								span.recommended__image-container
+									span.recommended__rubric News
+									img.recommended__image(src='themes/default/images/recommended_sample.jpg')
+									span.recommended__play-icon.icon-play_icon
+								span.recommended__title Justin Timberlake Working on Documentary About “The 20/20 Experience”
+
+				section.user-comments
+					h2.user-comments__header User Comments
+					img.user-comments__image(src='themes/default/images/user_comments.jpg')
+
+			aside.right-rail
+				article.most-popular
+					h2.most-popular-header Most Popular
+					ul.most-popular__list
+						li.most-popular__item
+							a.most-popular__link(href="#")
+								span.most-popular__image-container
+									span.most-popular__rubric News
+									img.most-popular__image(src='themes/default/images/most_popular_sample.jpg')
+									span.most-popular__play-icon.icon-play_icon
+								span.most-popular__title Justin Timberlake Working on Documentary About “The 20/20 Experience”
+
+						li.most-popular__item
+							a.most-popular__link(href="#")
+								span.most-popular__image-container
+									span.most-popular__rubric News
+									img.most-popular__image(src='themes/default/images/most_popular_sample.jpg')
+									span.most-popular__play-icon.icon-play_icon
+								span.most-popular__title Justin Timberlake Working on Documentary About “The 20/20 Experience”
+
+						li.most-popular__item
+							a.most-popular__link(href="#")
+								span.most-popular__image-container
+									span.most-popular__rubric News
+									img.most-popular__image(src='themes/default/images/most_popular_sample.jpg')
+									span.most-popular__play-icon.icon-play_icon
+								span.most-popular__title Justin Timberlake Working on Documentary About “The 20/20 Experience”
+
+						li.most-popular__item
+							a.most-popular__link(href="#")
+								span.most-popular__image-container
+									span.most-popular__rubric News
+									img.most-popular__image(src='themes/default/images/most_popular_sample.jpg')
+									span.most-popular__play-icon.icon-play_icon
+								span.most-popular__title Justin Timberlake Working on Documentary About “The 20/20 Experience”
+				
+				img.image(src='themes/default/images/image.jpg')
+
+		section.basic-container.overflow-visible
+			article.latest.basic-container__box-shadow
+				h2.latest__header The Latest
+				ul.latest__list
+					li.latest__item
+						a.latest__link(href="#")
+							span.latest__image-container
+								span.latest__rubric News
+								img.latest__image(src='themes/default/images/latest/latest_img_1.jpg')
+								span.latest__play-icon.icon-play_icon
+							span.latest__title Justin Timberlake Working on Documentary About “The 20/20 Experience”
+
+					li.latest__item
+						a.latest__link(href="#")
+							span.latest__image-container
+								span.latest__rubric News
+								img.latest__image(src='themes/default/images/latest/latest_img_1.jpg')
+								span.latest__play-icon.icon-play_icon
+							span.latest__title Justin Timberlake Working on Documentary About “The 20/20 Experience”
+
+
+					li.latest__item
+						a.latest__link(href="#")
+							span.latest__image-container
+								span.latest__rubric News
+								img.latest__image(src='themes/default/images/latest/latest_img_1.jpg')
+								span.latest__play-icon.icon-play_icon
+							span.latest__title Justin Timberlake Working on Documentary About “The 20/20 Experience”
+
+					li.latest__item
+						a.latest__link(href="#")
+							span.latest__image-container
+								span.latest__rubric News
+								img.latest__image(src='themes/default/images/latest/latest_img_1.jpg')
+								span.latest__play-icon.icon-play_icon
+							span.latest__title Justin Timberlake Working on Documentary About “The 20/20 Experience”
+
+					li.latest__item
+						a.latest__link(href="#")
+							span.latest__image-container
+								span.latest__rubric News
+								img.latest__image(src='themes/default/images/latest/latest_img_1.jpg')
+								span.latest__play-icon.icon-play_icon
+							span.latest__title Justin Timberlake Working on Documentary About “The 20/20 Experience”
+
+					li.latest__item
+						a.latest__link(href="#")
+							span.latest__image-container
+								span.latest__rubric News
+								img.latest__image(src='themes/default/images/latest/latest_img_1.jpg')
+								span.latest__play-icon.icon-play_icon
+							span.latest__title Justin Timberlake Working on Documentary About “The 20/20 Experience”
+
+					li.latest__item
+						a.latest__link(href="#")
+							span.latest__image-container
+								span.latest__rubric News
+								img.latest__image(src='themes/default/images/latest/latest_img_1.jpg')
+								span.latest__play-icon.icon-play_icon
+							span.latest__title Justin Timberlake Working on Documentary About “The 20/20 Experience”
+
+					li.latest__item
+						a.latest__link(href="#")
+							span.latest__image-container
+								span.latest__rubric News
+								img.latest__image(src='themes/default/images/latest/latest_img_1.jpg')
+								span.latest__play-icon.icon-play_icon
+							span.latest__title Justin Timberlake Working on Documentary About “The 20/20 Experience”
+
+				p.load-more
+					a.load-more__link(href="#") Load more stories
 
 
 		footer.main-footer
